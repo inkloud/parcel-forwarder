@@ -34,6 +34,12 @@ The following rules are mandatory for the integration of your code with our proj
 
 Check our plugin template in ```src/IT/TEMPLATE``` for not start a project from scratch!
 
+### Run the project 
+**NodeJs** is required. CLI command: 
+
+- watch the changes and update files: ```npm run watch``` 
+- deployment: ```npm run deploy``` 
+
 ### Props
 
 These are the ReactJS **props** passed to your main componet plugin:
