@@ -1,0 +1,48 @@
+{
+    "name": "template",
+    "version": "1.0.0",
+    "description": "Parcel Forwarder",
+    "private": true,
+    "scripts": {
+        "build": "webpack --env development --config webpack.config.js",
+        "deploy": "webpack --env production --config webpack.config.js",
+        "watch": "webpack --env development --config webpack.config.js --watch",
+        "upgrade": "ncu -u",
+        "test": "jest"
+    },
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "targets": {
+                        "browsers": [
+                            "> 5%",
+                            "last 2 versions"
+                        ]
+                    }
+                }
+            ],
+            "@babel/preset-react"
+        ]
+    },
+    "author": "Luca Bacchi <luca@life365.eu>",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.12.3",
+        "@babel/preset-env": "^7.12.1",
+        "@babel/preset-react": "^7.12.5",
+        "babel-loader": "^8.2.1",
+        "npm-check-updates": "^10.0.0",
+        "webpack": "^5.4.0",
+        "webpack-cli": "^4.2.0"
+    },
+    "dependencies": {
+        "core-js": "^3.7.0",
+        "jest": "^26.6.3",
+        "node-localstorage": "^2.1.6",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "store": "^2.0.12"
+    }
+}
