@@ -112,6 +112,7 @@ These are the ReactJS **props** passed to your main componet plugin:
   "transport_doc_n": 79251
 } 
 ```
+  -shipping_data: where are stored every useful information about shipping
 - props['token']
 ```
 {
