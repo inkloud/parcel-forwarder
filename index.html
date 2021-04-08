@@ -36,7 +36,13 @@
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script>
-            const API = "http://it2.life365.eu/api"
+            const COUNTRY = 'IT'
+            let API = "http://it2.life365.eu/api"
+
+            if(COUNTRY == 'ES'){
+                API = "https://www.inkloud.es/api"
+            }
+
             const AUTH = {
                 AUTH_API: API + "/auth/",
                 AUTH_DECODE_API: API + "/auth/decode/",
@@ -47,6 +53,7 @@
             const GET_ORDER_STATE_HISTORY = API + "/order/state_history/-1"
             const GET_WH_USERS = API + "/picker/wh_users"
             const GET_PLUGIN_ASSET = "./assets/IT/courier_TEMPLATE/todo.jpg"
+            const USE_WAREHOUSE_WORKER_LOGIN = true
         </script>
         <script src="./dist/main.js"></script>
     </body>

@@ -1,7 +1,0 @@
-const COUNTRY = "IT"
-const USE_WAREHOUSE_WORKER_LOGIN = false
-
-export {
-    COUNTRY,
-    USE_WAREHOUSE_WORKER_LOGIN
-}

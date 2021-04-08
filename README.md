@@ -147,9 +147,9 @@ API for change order information in our system. The two params in the body are:
 - *box_n*: number of box used for making the order 
 Use the jwt that you can found in props['token']['jwt']
 
-### country_settings.js 
+### What country and what legacy system?
 
-Script with some config variable. Is mandatory to set the **COUNTRY** variable with the COUNTRYID correct. 
+Is mandatory to set the **COUNTRY** variable with the COUNTRYID correct in the index.html file. When you set this the project configures itself with the correct variable for interact properly with the legacy system. 
 For the other variable and some other info please contact us!
     
 ## Usefull links and contacts

@@ -5,7 +5,6 @@ import OrderInfoCard from './order_info';
 import Utils from './utils';
 import { PluginCard as PluginTemplate } from "./IT/TEMPLATE/plugin";
 import { checkIsASmartphone } from "./utils/window_dimension";
-import { COUNTRY, USE_WAREHOUSE_WORKER_LOGIN } from "./country_settings";
 const storage = window.localStorage
 const plugin_div_id = "Plugin"
 
@@ -21,8 +20,6 @@ const SEARCH_ORDER_BUTTON_ID = "search_order_button_id"
 const COMPONENT_ID = 'OrderDetailsCard'
 const FORM_ID = 'form_id'
 
-const REDO_PENDING_PROCEDURE_MINUTES = 2
-
 const OrderDetailsCard = function (props) {
     const [order, setOrder] = React.useState({})
     const [wh_userAuthenticated, setWh_userAuthenticated] = React.useState(false)
@@ -33,6 +30,7 @@ const OrderDetailsCard = function (props) {
     const wh_userIdInput = React.useRef(null)
 
     React.useEffect(function () {
+        console.log('use wh login', USE_WAREHOUSE_WORKER_LOGIN)
         redoAllPendingProcedureFromPlugin(props['token']['jwt'])
         if (USE_WAREHOUSE_WORKER_LOGIN) {
             wh_userIdInput.current.focus()

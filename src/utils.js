@@ -4,11 +4,6 @@ function parseOrder(order) {
     let orderParsed = {}
 
     //Mittente
-    /*
-        da vedere il paese da cui spediamo nella vecchia app avevamo
-        Life365 italia ma sta roba deve girare anche in altri paesi
-    */
-    //si chimano sempre Life365??
     orderParsed['sender'] = !order['dropshipping'] ? SENDER_COMPANY_NAME : DROPSHIPPING_ALIAS
 
     let spedizione = order['addr']['spedizione']
