@@ -34,6 +34,14 @@ The following rules are mandatory for the integration of your code with our proj
 
 Check our plugin template in ```src/IT/TEMPLATE``` for not start a project from scratch!
 
+### How to launch the project
+
+1. Open a shell in the project root directory
+2. ``` npm run watch ```
+3. Open index.html on Chrome 
+4. Use the username and password gived from us
+5. Use the trial order and use the application
+
 ### Props
 
 These are the ReactJS **props** passed to your main componet plugin:
