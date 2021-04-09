@@ -34,7 +34,10 @@ The following rules are mandatory for the integration of your code with our proj
 
 Check our plugin template in ```src/IT/TEMPLATE``` for not start a project from scratch!
 
-### How to launch the project
+### NB 
+Follow the project structure is mandatory because the software is setted for automatically load the correct plugin. There is no backend work to do!  
+
+## How to launch the project
 
 1. Open a shell in the project root directory
 2. ``` npm run watch ```
@@ -42,7 +45,7 @@ Check our plugin template in ```src/IT/TEMPLATE``` for not start a project from 
 4. Use the username and password gived from us
 5. Use the trial order and use the application
 
-### Props
+## Props
 
 These are the ReactJS **props** passed to your main componet plugin:
 
@@ -141,7 +144,7 @@ These are the ReactJS **props** passed to your main componet plugin:
 ```
 - props['token']['jwt'] useful for communicate with our system 
 
-### API 
+## API 
 
 ``` PUT https://it2/life365.eu/api/order/{orderId}?jwt=... ```
 
@@ -155,7 +158,7 @@ API for change order information in our system. The two params in the body are:
 - *box_n*: number of box used for making the order 
 Use the jwt that you can found in props['token']['jwt']
 
-### What country and what legacy system?
+## What country and what legacy system?
 
 Is mandatory to set the **COUNTRY** variable with the COUNTRYID correct in the index.html file. When you set this the project configures itself with the correct variable for interact properly with the legacy system. 
 For the other variable and some other info please contact us!
