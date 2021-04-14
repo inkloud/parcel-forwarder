@@ -1,5 +1,5 @@
-const DROPSHIPPING_ALIAS = "Log. Romagnola"
-const  SENDER_COMPANY_NAME = "Life365 Italy"
+const DROPSHIPPING_ALIAS = "DROPSHIPPING"
+const  SENDER_COMPANY_NAME = "Life365"
 function parseOrder(order) {
     let orderParsed = {}
 
