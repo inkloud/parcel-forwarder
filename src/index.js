@@ -84,7 +84,7 @@ const OrderDetailsCard = function (props) {
                     setShowOrderDetail(true)
 
                     import(`./${COUNTRY}/courier_${parsedOrder['courier']}/plugin`).then((pluginCard) => {
-                        const Plugin = pluginCard.default.PluginCard
+                        const Plugin = pluginCard.PluginCard
                         console.log(props['token'])
                         ReactDOM.render(<Plugin order={data} token={props['token']} wh_user_id={wh_user_id} ></Plugin>, document.getElementById(plugin_div_id))
                     }).catch((err) => {
