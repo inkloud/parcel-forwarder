@@ -148,7 +148,7 @@ This data type could need to be parsed for get some info quickly and without err
 
 ## API 
 
-``` PUT https://it2/life365.eu/api/order/{orderId}?jwt=... ```
+``` PUT https://it2/life365.eu/api/order/edit/{orderId}?jwt=... ```
 
 
 ``` (e.g.) body: { logistic_state: 'LABELLED', box_n: 5 } ```
